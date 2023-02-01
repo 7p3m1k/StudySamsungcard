@@ -134,7 +134,7 @@ export default {
         margin-left: 73px;
         font-size: 20px;
         line-height: 22px;
-        font-weight: 500;
+        font-weight: bold;
         white-space: nowrap;
         color: #111;
       }
