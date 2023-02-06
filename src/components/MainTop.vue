@@ -3,7 +3,7 @@
     <div class="main__top">
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide>
-          <img class="aa" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/12/28/p_img_1616x924.png" alt="">
+          <img class="card-img" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/12/28/p_img_1616x924.png" alt="">
           <div class="content">
             <h2>
               스타벅스 50%에 <br/>
@@ -13,7 +13,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="aa" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2023/01/05/p_img_1616x924.png" alt="">
+          <img class="card-img" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2023/01/05/p_img_1616x924.png" alt="">
           <div class="content">
             <h2>
               연 최대 48만원 할인 <br/>
@@ -23,7 +23,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="aa" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/09/29/p_img_1616x924.png" alt="">
+          <img class="card-img" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/09/29/p_img_1616x924.png" alt="">
           <div class="content">
             <h2>
               펫가족이라면 <br/>
@@ -33,7 +33,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="aa" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/12/23/p_img_1616x924_3.png" alt="">
+          <img class="card-img" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/12/23/p_img_1616x924_3.png" alt="">
           <div class="content">
             <h2>
               연회비가 <br/>
@@ -43,7 +43,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="aa" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/11/09/p_img_1616x924_02.png" alt="">
+          <img class="card-img" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/11/09/p_img_1616x924_02.png" alt="">
           <div class="content">
             <h2>
               친구에게 <br/>
@@ -53,7 +53,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="aa" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/10/13/p_img_1616x924.png" alt="">
+          <img class="card-img" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/10/13/p_img_1616x924.png" alt="">
           <div class="content">
             <h2>
               연 최대 할인금액 <br/>
@@ -63,7 +63,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img class="aa" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/10/13/p_img_1616x924_1.png" alt="">
+          <img class="card-img" src="https://static11.samsungcard.com/wcms/personal/main/shpp42_35/shph42_3/__icsFiles/afieldfile/2022/10/13/p_img_1616x924_1.png" alt="">
           <div class="content">
             <h2>
               반가운 혜택 ON! <br/>
@@ -219,7 +219,8 @@ export default {
 <style lang="scss" scoped>
 
 .main {
-  margin-top: 50px;
+  margin-top: 166px;
+  padding-top: 50px;
   &__top {
     display: flex;
     align-items: center;
@@ -412,7 +413,7 @@ export default {
   }
 }
 
-.aa {
+.card-img {
   width: auto;
   height: 462px;
   border-radius: 10px;

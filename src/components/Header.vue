@@ -33,6 +33,7 @@
         <li class="nav__list"><a href="">카드안내/신청</a></li>
         <li class="nav__list"><a href="">금융</a></li>
         <li class="nav__list"><a href="">정기결제</a></li>
+        {{scrollChecked}}
       </ul>
       <div class="nav__sub">
         <button class="search"> </button>
@@ -44,16 +45,44 @@
 
 <script>
 export default {
-  name: "Header.vue"
+  name: "Header.vue",
+  data(){
+    return {
+      scrollChecked: false,
+    }
+  },
+  mounted () {
+    // let context = this
+    window.addEventListener('scroll', this.aa)
+  },
+  beforeDestroy () {
+    window.removeEventListener('keyup', this.aa)
+  },
+  methods: {
+    aa(){
+      if(window.scrollY > 0) {
+        console.log('내려갈때',this.scrollChecked = true)
+      }
+      if(window.scrollY === 0){
+        console.log('제자리일때',this.scrollChecked = false)
+      }
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .header {
   width: 100%;
-  /*height: 97px;*/
   max-width: 1224px;
   margin: 0 auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 99999;
 
   .sub {
     display: flex;
