@@ -1,46 +1,48 @@
 <template>
-  <header class="header">
-    <div class="sub">
-      <ul class="sub__left">
-        <li class="">
-          <a href="">개인사업자</a>
-        </li>
-        <li>
-          <a href="">법인</a>
-        </li>
-        <li>
-          <a href="">가맹점</a>
-        </li>
-        <li>
-          <a href="">금융소비자보호</a>
-        </li>
-        <li>
-          <a href="">상품공시실</a>
-        </li>
-      </ul>
-      <ul class="sub__right">
-        <li>로그인</li>
-        <li>회원가입</li>
-      </ul>
-    </div>
-    <div class="nav">
-      <div class="nav__logo">
-        <a href="#"></a>
+  <div :class="{'scroll-border': scrollChecked === true,'header-container' : true }">
+    <header class="header">
+      <div class="sub">
+        <ul class="sub__left">
+          <li class="">
+            <a href="">개인사업자</a>
+          </li>
+          <li>
+            <a href="">법인</a>
+          </li>
+          <li>
+            <a href="">가맹점</a>
+          </li>
+          <li>
+            <a href="">금융소비자보호</a>
+          </li>
+          <li>
+            <a href="">상품공시실</a>
+          </li>
+        </ul>
+        <ul class="sub__right">
+          <li>로그인</li>
+          <li>회원가입</li>
+        </ul>
       </div>
-      <ul class="nav__menu">
-        <li class="nav__list"><a href="">마이</a></li>
-        <li class="nav__list"><a href="">혜택</a></li>
-        <li class="nav__list"><a href="">카드안내/신청</a></li>
-        <li class="nav__list"><a href="">금융</a></li>
-        <li class="nav__list"><a href="">정기결제</a></li>
-        {{scrollChecked}}
-      </ul>
-      <div class="nav__sub">
-        <button class="search"> </button>
-        <button class="hamburger"></button>
+      <div class="nav">
+        <div class="nav__logo">
+          <a href="#"></a>
+        </div>
+        <ul class="nav__menu">
+          <li class="nav__list"><a href="">마이</a></li>
+          <li class="nav__list"><a href="">혜택</a></li>
+          <li class="nav__list"><a href="">카드안내/신청</a></li>
+          <li class="nav__list"><a href="">금융</a></li>
+          <li class="nav__list"><a href="">정기결제</a></li>
+        </ul>
+        <div class="nav__sub">
+          <button class="search"> </button>
+          <button class="hamburger"></button>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
+
 </template>
 
 <script>
@@ -72,17 +74,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.header-container {
+  width: 100%;
+  background-color: #ffffff;
+  height: 200px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.scroll-border {
+    border-bottom: 1px solid #e2e5eb;
+    width: 100%;
+    height: auto;
+}
+
 .header {
   width: 100%;
   max-width: 1224px;
   margin: 0 auto;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: #ffffff;
-  z-index: 99999;
+  z-index: 99;
 
   .sub {
     display: flex;
@@ -189,6 +204,14 @@ export default {
     }
   }
 }
+//.header::after {
+//  content: '';
+//  position: absolute;
+//  border-bottom: 1px solid red;
+//  width: 100vw;
+//  bottom: 0;
+//  left: 0;
+//}
 
 
 </style>
